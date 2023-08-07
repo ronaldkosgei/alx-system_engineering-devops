@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "Replace" | tr Ac Ze
