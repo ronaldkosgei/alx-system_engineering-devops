@@ -1,2 +1,2 @@
 #!/bin/bash
-count=0; IFS=: read -ra path_dirs <<< "$PATH"; for dir in "${path_dirs[@]}"; do count=$((count + 1)); done; echo "$count"
+echo $PATH | tr -s ":" "\n" | wc -l
