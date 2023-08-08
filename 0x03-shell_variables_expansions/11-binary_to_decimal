@@ -1,2 +1,2 @@
 #!/bin/bash
-decimal=0; for ((i=${#BINARY}-1; i>=0; i--)); do [ "${BINARY:$i:1}" = "1" ] && decimal=$((decimal + 2 ** (${#BINARY}-1-i))); done; printf "%d\n" $decimal
+echo "$((2#$BINARY))"
