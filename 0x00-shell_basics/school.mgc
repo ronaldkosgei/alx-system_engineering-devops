@@ -1,12 +1,2 @@
 #!/bin/bash
-
-# Generate the magic file header
-echo "# Magic file for school data files"
-echo ""
-
-# Loop through each file in the current directory
-for file in *; do
-    if [ -f "$file" ]; then
-        echo "0 string SCHOOL: $file"
-    fi
-done
+for file in *; do file_type=$(file -b "$file"); printf "%-30s %s\n" "$file:" "$file_type"; done
