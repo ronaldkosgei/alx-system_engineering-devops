@@ -1,2 +1,12 @@
 #!/bin/bash
-0 string SCHOOL School data file
+
+# Generate the magic file header
+echo "# Magic file for school data files"
+echo ""
+
+# Loop through each file in the current directory
+for file in *; do
+    if [ -f "$file" ]; then
+        echo "0 string SCHOOL: $file"
+    fi
+done
