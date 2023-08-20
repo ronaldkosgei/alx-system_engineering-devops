@@ -1,0 +1,4 @@
+#!/bin/bash
+find . -type f -name "*.gif" -printf "%s %f\n" | sort -f | awk '{ split($2, a, ".gif"); print a[1] }'
+
+
